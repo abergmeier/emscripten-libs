@@ -1,13 +1,13 @@
-{ name: "zlib",
-  description: "zlib compression library",
-  version: [ { version: "1.2.7",
-               git: { tag: "1.2.7"
-               }
-             },
-             { version: "1.2.6.1",
-               git: { tag: "1.2.6.1"
-               }
-             }
+{ "name"       : "zlib",
+  "description": "zlib compression library",
+  "version"    : [ { "version": "1.2.7",
+                     "git"    : { "tag": "1.2.7"
+                     }
+                   },
+                   { "version": "1.2.6.1",
+                     "git"    : { "tag": "1.2.6.1"
+                     }
+                   }
   ]
 }
 
