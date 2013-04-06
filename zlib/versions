@@ -1,10 +1,14 @@
 { "name"       : "zlib",
   "description": "zlib compression library",
   "versions"   : [ { "version": "1.2.7",
+                     "libs"   : null,
+                     "cflags" : null,
                      "git"    : { "tag": "1.2.7"
                      }
                    },
                    { "version": "1.2.6.1",
+                     "libs"   : null,
+                     "cflags" : null,
                      "git"    : { "tag": "1.2.6.1"
                      }
                    }
