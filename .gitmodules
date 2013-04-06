@@ -1,3 +1,6 @@
 [submodule "zlib/git_src"]
 	path = zlib/git_src
 	url = git://github.com/madler/zlib.git
+[submodule "casablanca/git_src"]
+	path = casablanca/git_src
+	url = https://git01.codeplex.com/casablanca
