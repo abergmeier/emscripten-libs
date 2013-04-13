@@ -3,14 +3,12 @@
   "versions"   : [ { "version": "1.2.7",
                      "libs"   : null,
                      "cflags" : null,
-                     "git"    : { "tag": "1.2.7"
-                     }
+                     "src"    : "https://github.com/madler/zlib/archive/v1.2.7.zip"
                    },
                    { "version": "1.2.6.1",
                      "libs"   : null,
                      "cflags" : null,
-                     "git"    : { "tag": "1.2.6.1"
-                     }
+                     "src"    : "https://github.com/madler/zlib/archive/v1.2.6.1.zip"
                    }
   ]
 }

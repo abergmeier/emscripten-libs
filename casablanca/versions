@@ -1,9 +1,8 @@
-{ name: "casablanca",
-  description: "C++ REST SDK library beta",
-  version: [ { version: "0.6",
-               git: { tag: "0.6"
-               }
-             }
+{ "name"       : "casablanca",
+  "description": "C++ REST SDK library beta",
+  "version"    : [ { "version": "0.6",
+                     "src"    : "https://github.com/abergmeier/emscripten-casablanca/archive/0.6_emscripten.zip"
+                   }
   ]
 }
 
