@@ -1,6 +1,11 @@
 { "name"       : "zlib",
   "description": "zlib compression library",
-  "versions"   : [ { "version": "1.2.7",
+  "versions"   : [ { "version": "1.2.7.1",
+                     "libs"   : null,
+                     "cflags" : null,
+                     "src"    : "https://github.com/madler/zlib/archive/v1.2.7.1.zip"
+                   },
+                   { "version": "1.2.7",
                      "libs"   : null,
                      "cflags" : null,
                      "src"    : "https://github.com/madler/zlib/archive/v1.2.7.zip"
