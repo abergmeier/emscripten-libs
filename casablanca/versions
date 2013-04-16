@@ -1,8 +1,12 @@
-{ "name"       : "casablanca",
-  "description": "C++ REST SDK library beta",
-  "version"    : [ { "version": "0.6",
-                     "src"    : "https://github.com/abergmeier/emscripten-casablanca/archive/0.6_emscripten.zip"
-                   }
+{ "maintainers"        : [ { "name" : "Andreas Bergmeier",
+                             "email": "andreas.bergmeier@gmx.net"
+                           }
+  ],
+  "build"              : [ "cd Release && emmake make debug"],
+  "ignore_archive_root": true,
+  "versions"           : [ { "version": "0.6",
+                             "src"    : "https://github.com/abergmeier/emscripten-casablanca/archive/0.6_emscripten.zip"
+                           }
   ]
 }
 
