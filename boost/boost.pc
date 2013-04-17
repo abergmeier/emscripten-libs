@@ -1,0 +1,8 @@
+prefix=${emscripten_prefix}
+includedir=${prefix}
+
+Name: boost
+Description: Boost C++ Libraries development files
+Version: 1.53.0
+Cflags: -I${includedir}
+Libs:
