@@ -2,7 +2,7 @@
                               "email": "azakai@mozilla.org"
                             }
   ],
-  "build"              : [ "emconfigure ./configure", "emmake make"],
+  "build"              : [ "emconfigure ./configure", "emmake make" ],
   "ignore_archive_root": true,
   "versions"           : [ { "version": "1.2.7",
                              "src"    : "http://zlib.net/zlib-1.2.7.tar.bz2"
