@@ -1,0 +1,13 @@
+{ "maintainers"        :  [ { "name" : "Andreas Bergmeier",
+                              "email": "andreas.bergmeier@gmx.net"
+                            }
+  ],
+  "build"              : [],
+  "ignore_archive_root": true,
+  "versions"           : [ { "version": "1.53.0",
+                             "config" : "https://raw.github.com/abergmeier/emscripten-boost/1.53.0/boost.pc",
+                             "src"    : "http://downloads.sourceforge.net/project/boost/boost/1.53.0/boost_1_53_0.tar.bz2"
+                           }
+  ]
+}
+
