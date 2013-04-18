@@ -1,0 +1,14 @@
+{ "maintainers"        :  [ { "name" : "Andreas Bergmeier",
+                              "email": "andreas.bergmeier@gmx.net"
+                            }
+  ],
+  "build"              : [ "emconfigure ./configure --host=x86-unknown-linux-gnu --prefix=`pwd -P`/install --with-threads=no --with-ftp=no --with-http=no CPPFLAGS=-D__LINUX_ERRNO_EXTENSIONS__",
+                           "emmake make",
+                           "emmake make install" ],
+  "ignore_archive_root": true,
+  "versions"           : [ { "version": "2.9.0",
+                             "src"    : "ftp://xmlsoft.org/libxml2/libxml2-2.9.0.tar.gz"
+                           }
+  ]
+}
+
