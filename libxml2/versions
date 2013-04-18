@@ -2,7 +2,7 @@
                               "email": "andreas.bergmeier@gmx.net"
                             }
   ],
-  "build"              : [ "emconfigure ./configure --host=x86-unknown-linux-gnu --prefix=${EMSCRIPTEN_SYSTEM_ROOT} --with-threads=no --with-ftp=no --with-http=no CPPFLAGS=-D__LINUX_ERRNO_EXTENSIONS__",
+  "build"              : [ "emconfigure ./configure --host=i386-pc-linux-gnu --prefix=${EMSCRIPTEN_SYSTEM_ROOT} --with-threads=no --with-ftp=no --with-http=no CPPFLAGS=-D__LINUX_ERRNO_EXTENSIONS__",
                            "emmake make",
                            "emmake make install" ],
   "ignore_archive_root": true,
