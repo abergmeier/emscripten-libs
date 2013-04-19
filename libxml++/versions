@@ -1,0 +1,14 @@
+{ "maintainers"        :  [ { "name" : "Andreas Bergmeier",
+                              "email": "andreas.bergmeier@gmx.net"
+                            }
+  ],
+  "depends"            : [ "libxml2" ],
+  "build"              : [ "emconfigure ./configure CPPFLAGS=`empkg-config --cflags libxml-2.0` LIBS=`empkg-config --libs libxml-2.0`",
+                           "emmake make"  ],
+  "ignore_archive_root": true,
+  "versions"           : [ { "version": "2.36.0",
+                             "src"    : "http://ftp.gnome.org/pub/GNOME/sources/libxml++/2.36/libxml++-2.36.0.tar.xz"
+                           }
+  ]
+}
+
