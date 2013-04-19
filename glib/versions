@@ -1,0 +1,14 @@
+{ "maintainers"        :  [ { "name" : "Andreas Bergmeier",
+                              "email": "andreas.bergmeier@gmx.net"
+                            }
+  ],
+  "build"              : [ "emconfigure ./configure --host=i386-pc-linux-gnu --prefix=${EMSCRIPTEN_SYSTEM_ROOT} --enable-static=yes --enable-shared=no --disable-selinux --disable-xattr --disable-libelf",
+                           "emmake make",
+                           "emmake make install" ],
+  "ignore_archive_root": true,
+  "versions"           : [ { "version": "2.34.3",
+                             "src"    : "ftp://ftp.gnome.org/pub/gnome/sources/glib/2.34/glib-2.34.3.tar.xz"
+                           }
+  ]
+}
+
