@@ -1,17 +1,21 @@
 emscripten-libs
 ===============
 
-Library repository experiment for Emscripten:
+Library repository experiment for Emscripten.
 
-#Libraries available/buildable in pure form (upstream source):
+#Libraries
+##Pure
+Libraries available/buildable with upstream sources.
 - zlib
 - libxml2
 - libsigc++
 
-#Libraries available/buildable in patched form (forked source):
+##Patched
+Libraries available/buildable with forked sources.
 - libffi
 
-#Libraries being worked on (help very welcome):
+##Work in progress
+Libraries not ready yet. Help very welcome.
 - gettext  (patches sent upstream)
 - glib     (awaiting dependencies)
 - libxml++ (awaiting dependencies)
