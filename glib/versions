@@ -2,7 +2,7 @@
                               "email": "andreas.bergmeier@gmx.net"
                             }
   ],
-  "build"              : [ "emconfigure ./configure --host=i386-pc-linux-gnu --prefix=${EMSCRIPTEN_SYSTEM_ROOT} --enable-static=yes --enable-shared=no --disable-selinux --disable-xattr --disable-libelf",
+  "build"              : [ "emconfigure ./configure --host=i386-pc-linux-gnu --prefix=${EMSCRIPTEN_SYSTEM_ROOT} --enable-static=yes --enable-shared=no --disable-selinux --disable-xattr --disable-libelf PKG_CONFIG_LIBDIR=${PKG_CONFIG_LIBDIR}",
                            "emmake make",
                            "emmake make install" ],
   "ignore_archive_root": true,
