@@ -12,7 +12,8 @@ Library repository experiment for Emscripten:
 - libffi
 
 #Libraries being worked on (help very welcome):
-- glib
-- libxml++
-- boost
+- gettext  (patches sent upstream)
+- glib     (awaiting dependencies)
+- libxml++ (awaiting dependencies)
+- boost    (needs build system for Emscripten compile )
 
