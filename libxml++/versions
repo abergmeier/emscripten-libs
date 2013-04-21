@@ -3,8 +3,9 @@
                             }
   ],
   "depends"            : [ "libxml2" ],
-  "build"              : [ "emconfigure ./configure CPPFLAGS=`empkg-config --cflags libxml-2.0` LIBS=`empkg-config --libs libxml-2.0`",
-                           "emmake make"  ],
+  "build"              : [ "emconfigure ./configure --host=i386-pc-linux-gnu --prefix=${EMSCRIPTEN_SYSTEM_ROOT} --enable-static=yes --enable-shared=no",
+                           "emmake make",
+                           "emmake make install"  ],
   "ignore_archive_root": true,
   "versions"           : [ { "version": "2.36.0",
                              "src"    : "http://ftp.gnome.org/pub/GNOME/sources/libxml++/2.36/libxml++-2.36.0.tar.xz"
