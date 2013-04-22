@@ -1,0 +1,14 @@
+{ "maintainers"        :  [ { "name" : "Andreas Bergmeier",
+                              "email": "andreas.bergmeier@gmx.net"
+                            }
+  ],
+  "build"              : [ "emconfigure source/configure --host=i386-pc-linux-gnu --prefix=${EMSCRIPTEN_SYSTEM_ROOT} --enable-static --disable-shared --disable-dyload --disable-renaming --with-data-packaging=static CXXFLAGS='-DU_USING_ICU_NAMESPACE=0' CPPFLAGS='-DU_DISABLE_RENAMING=1' ",
+                           "emmake make VERBOSE=1",
+                           "emmake make install" ],
+  "ignore_archive_root": true,
+  "versions"           : [ { "version": "51.1",
+                             "src"    : "http://download.icu-project.org/files/icu4c/51.1/icu4c-51_1-src.tgz"
+                           }
+  ]
+}
+
