@@ -14,6 +14,7 @@ Libraries available/buildable with upstream sources.
 ##Patched
 Libraries available/buildable with forked sources.
 - libffi
+- libbzip2 (patches sent upstream)
 
 ##Work in progress
 Libraries not ready yet. Help very welcome.

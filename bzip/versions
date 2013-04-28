@@ -1,0 +1,12 @@
+{ "maintainers"        :  [ { "name" : "Andreas Bergmeier",
+                              "email": "andreas.bergmeier@gmx.net"
+                            }
+  ],
+  "build"              : [ "emmake make install-lib CC:=\\${CC} AR:=\\${AR} RANLIB:=\\${RANLIB} PREFIX=${EMSCRIPTEN_SYSTEM_ROOT}" ],
+  "ignore_archive_root": true,
+  "versions"           : [ { "version": "1.0.6",
+                             "src"    : "https://github.com/abergmeier/emscripten-bzip/archive/emscripten_1.0.6.zip"
+                           }
+  ]
+}
+
