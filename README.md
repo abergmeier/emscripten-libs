@@ -9,6 +9,7 @@ Libraries available/buildable with upstream sources.
 - zlib
 - libxml2
 - libsigc++
+- openjpeg
 
 ##Patched
 Libraries available/buildable with forked sources.
