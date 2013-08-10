@@ -2,9 +2,7 @@
                               "email": "azakai@mozilla.org"
                             }
   ],
-  "build"              : [ "emconfigure ./configure --host=le32-unknown-nacl --enable-static=yes --disable-shared",
-                           "emmake make",
-                           "emmake make install"
+  "build"              : [ "mkdir build && cd build && emcmake cmake ../src -DCMAKE_INSTALL_PREFIX=$prefix -G Ninja && ninja install"
   ],
   "ignore_archive_root": true,
   "versions"           : [ { "version": "1.3.1",
