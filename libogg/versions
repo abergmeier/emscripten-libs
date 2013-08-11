@@ -2,7 +2,9 @@
                               "email": "azakai@mozilla.org"
                             }
   ],
-  "build"              : [ "mkdir build && cd build && emcmake cmake ../src -DCMAKE_INSTALL_PREFIX=${EMSCRIPTEN_SYSTEM_ROOT} -G Ninja && ninja install"
+  "build"              : [ "rm -fr build",
+                           "mkdir build",
+                           "cd build && emcmake cmake ../src -DCMAKE_INSTALL_PREFIX=${EMSCRIPTEN_SYSTEM_ROOT} -G Ninja && ninja install"
   ],
   "ignore_archive_root": true,
   "versions"           : [ { "version": "1.3.1",
