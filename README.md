@@ -24,4 +24,5 @@ Libraries not ready yet. Help very welcome.
 - glib     (awaiting dependencies)
 - libxml++ (awaiting dependencies)
 - boost    (needs build system for Emscripten compile )
+- libjpeg-turbo
 
