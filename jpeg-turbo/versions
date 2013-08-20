@@ -6,7 +6,7 @@
   "versions"           : [ { "version": "1.3.0",
                              "src"    : "https://github.com/abergmeier/emscripten-libjpeg-turbo/archive/emscripten_1.3.0.zip",
                              "build"  : [ "chmod u+x ./configure",
-                                          "PKG_CONFIG=empkg-config emconfigure ./configure --host=i386-pc-linux-gnu --prefix=${EMSCRIPTEN_SYSTEM_ROOT} --enable-static=yes --disable-shared --without-simd",
+                                          "PKG_CONFIG=empkg-config emconfigure ./configure --host=i386-pc-linux-gnu --prefix=${EMSCRIPTEN_SYSTEM_ROOT} --enable-static=yes --disable-shared --without-simd --with-jpeg8",
                                           "emmake make",
                                           "emmake make install",
                                           "mkdir -p ${EMSCRIPTEN_SYSTEM_ROOT}/lib/pkgconfig",
