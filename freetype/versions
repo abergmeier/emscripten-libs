@@ -1,0 +1,23 @@
+{ "maintainers"        :  [ { "name" : "Andreas Bergmeier",
+                              "email": "abergmeier@gmx.net"
+                            }
+  ],
+  "build"              : [ "emcmake cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX:PATH=${EMSCRIPTEN_SYSTEM_ROOT} -G Ninja .",
+                           "ninja install",
+                           { "builder"  : "pkg-config",
+                             "arguments": { "file"   : "${EMSCRIPTEN_SYSTEM_ROOT}/lib/pkgconfig/freetype.pc",
+                                            "prefix" : "${EMSCRIPTEN_SYSTEM_ROOT}",
+                                            "name"   : "freetype",
+                                            "version": "2.5.1",
+                                            "libs"   : "-L${libdir} -L${sharedlibdir} -lfreetype",
+                                            "cflags" : "-I${includedir}"
+                             }
+                           }
+  ],
+  "ignore_archive_root": true,
+  "versions"           : [ { "version": "2.5.1",
+                             "src"    : "http://download.savannah.gnu.org/releases/freetype/freetype-2.5.1.tar.bz2"
+                           }
+  ]
+}
+

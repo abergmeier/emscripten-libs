@@ -6,11 +6,12 @@ Library repository experiment for Emscripten.
 #Libraries
 ##Pure
 Libraries available/buildable with upstream sources.
-- zlib
-- libxml2
+- freetype
 - libsigc++
-- openjpeg
 - libvorbis
+- libxml2
+- openjpeg
+- zlib
 
 ##Patched
 Libraries available/buildable with forked sources.
