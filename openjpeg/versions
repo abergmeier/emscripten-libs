@@ -2,9 +2,8 @@
                               "email": "azakai@mozilla.org"
                             }
   ],
-  "build"              : [ "rm -fr build",
-                           "mkdir build",
-                           "cd build && emcmake cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX:PATH=${EMSCRIPTEN_SYSTEM_ROOT} -DBUILD_SHARED_LIBS:bool=off -DHAVE_OPJ_BIG_ENDIAN=0 -DPKG_CONFIG_EXECUTABLE=${EMSCRIPTEN_ROOT}/empkg-config -G Ninja .. && ninja install",
+  "build"              : [ "emcmake cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX:PATH=${EMSCRIPTEN_SYSTEM_ROOT} -DHAVE_OPJ_BIG_ENDIAN=0 -G Ninja .",
+                           "ninja install",
                            { "builder"  : "pkg-config",
                              "arguments": { "file"   : "${EMSCRIPTEN_SYSTEM_ROOT}/lib/pkgconfig/openjp.pc",
                                             "prefix" : "${EMSCRIPTEN_SYSTEM_ROOT}",
