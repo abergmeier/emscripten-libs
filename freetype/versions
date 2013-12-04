@@ -10,7 +10,7 @@
                                             "name"   : "freetype",
                                             "version": "2.5.1",
                                             "libs"   : "-L${libdir} -L${sharedlibdir} -lfreetype",
-                                            "cflags" : "-I${includedir}"
+                                            "cflags" : "-I${includedir}/freetype2"
                              }
                            }
   ],
