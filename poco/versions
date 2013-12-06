@@ -1,0 +1,24 @@
+{ "maintainers"        :  [ { "name" : "Andreas Bergmeier",
+                              "email": "abergmeier@gmx.net"
+                            }
+  ],
+  "build"              : [ "emcmake cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX:PATH=${EMSCRIPTEN_SYSTEM_ROOT} -G Ninja .",
+                           "ninja install",
+                           { "builder"  : "pkg-config",
+                             "arguments": { "file"   : "${EMSCRIPTEN_SYSTEM_ROOT}/lib/pkgconfig/poco.pc",
+                                            "prefix" : "${EMSCRIPTEN_SYSTEM_ROOT}",
+                                            "name"   : "Poco",
+                                            "desc"   : "Poco Foundation C++ Libraries",
+                                            "version": "2.5.1",
+                                            "libs"   : "-L${libdir} -L${sharedlibdir} -lPocoUtil -lPocoXML -lPocoFoundation",
+                                            "cflags" : "-I${includedir}"
+                             }
+                           }
+  ],
+  "ignore_archive_root": true,
+  "versions"           : [ { "version": "1.4.6p2",
+                             "src"    : "https://github.com/abergmeier/emscripten-poco/archive/emscripten_1.4.6p2.zip"
+                           }
+  ]
+}
+

@@ -19,6 +19,7 @@ Libraries available/buildable with forked sources.
 - libbzip2 (patches sent upstream)
 - libogg   (changed build system)
 - FreeImage (changed build system / source code)
+- poco      (changed build system)
 
 ##Work in progress
 Libraries not ready yet. Help very welcome.
