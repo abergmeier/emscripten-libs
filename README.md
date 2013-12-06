@@ -20,6 +20,7 @@ Libraries available/buildable with forked sources.
 - libogg   (changed build system)
 - FreeImage (changed build system / source code)
 - poco      (changed build system)
+- tess2     (added build system)
 
 ##Work in progress
 Libraries not ready yet. Help very welcome.
@@ -28,4 +29,5 @@ Libraries not ready yet. Help very welcome.
 - libxml++ (awaiting dependencies)
 - boost    (needs build system for Emscripten compile )
 - libjpeg-turbo
+
 

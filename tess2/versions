@@ -1,0 +1,23 @@
+{ "maintainers"        :  [ { "name" : "Andreas Bergmeier",
+                              "email": "abergmeier@gmx.net"
+                            }
+  ],
+  "build"              : [ "emcmake cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX:PATH=${EMSCRIPTEN_SYSTEM_ROOT} -G Ninja .",
+                           "ninja install",
+                           { "builder"  : "pkg-config",
+                             "arguments": { "file"   : "${EMSCRIPTEN_SYSTEM_ROOT}/lib/pkgconfig/tess2.pc",
+                                            "prefix" : "${EMSCRIPTEN_SYSTEM_ROOT}",
+                                            "name"   : "tess2",
+                                            "version": "1.0.1",
+                                            "libs"   : "-L${libdir} -L${sharedlibdir} -ltess2",
+                                            "cflags" : "-I${includedir}"
+                             }
+                           }
+  ],
+  "ignore_archive_root": true,
+  "versions"           : [ { "version": "1.0.1",
+                             "src"    : "https://github.com/abergmeier/emscripten-libtess2/archive/emscripten_1.0.1.zip"
+                           }
+  ]
+}
+
