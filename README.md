@@ -21,6 +21,7 @@ Libraries available/buildable with forked sources.
 - FreeImage (changed build system / source code)
 - poco      (changed build system)
 - tess2     (added build system)
+- kissfft   (added build system)
 
 ##Work in progress
 Libraries not ready yet. Help very welcome.
