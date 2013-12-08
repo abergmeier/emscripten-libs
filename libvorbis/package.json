@@ -2,7 +2,8 @@
                               "email": "azakai@mozilla.org"
                             }
   ],
-  "build"              : [ "PKG_CONFIG=empkg-config emconfigure ./configure --host=i386-pc-linux-gnu --prefix=${EMSCRIPTEN_SYSTEM_ROOT} --enable-static=yes --disable-shared",
+  "build"              : [ "chmod u+x ./configure",
+                           "PKG_CONFIG=empkg-config emconfigure ./configure --host=i386-pc-linux-gnu --prefix=${EMSCRIPTEN_SYSTEM_ROOT} --enable-static=yes --disable-shared",
                            "emmake make",
                            "emmake make install"
   ],

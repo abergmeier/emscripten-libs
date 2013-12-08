@@ -1,5 +1,5 @@
-{ "maintainers"        :  [ { "name" : "Alon Zakai",
-                              "email": "azakai@mozilla.org"
+{ "maintainers"        :  [ { "name" : "Andreas Bergmeier",
+                              "email": "abergmeier@gmx.net"
                             }
   ],
   "build"              : [ "emcmake cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX:PATH=${EMSCRIPTEN_SYSTEM_ROOT} -DHAVE_OPJ_BIG_ENDIAN=0 -G Ninja .",
