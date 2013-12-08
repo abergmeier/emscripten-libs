@@ -11,6 +11,7 @@ Libraries available/buildable with upstream sources.
 - libvorbis
 - libxml2
 - openjpeg
+- sndfile
 - zlib
 
 ##Patched
