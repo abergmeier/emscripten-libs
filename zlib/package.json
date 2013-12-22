@@ -2,7 +2,7 @@
                               "email": "azakai@mozilla.org"
                             }
   ],
-  "build"              : [ "emconfigure ./configure --prefix=${EMSCRIPTEN_SYSTEM_ROOT} --static --archs='-arch i386'",
+  "build"              : [ "emconfigure ./configure --prefix=${EMSCRIPTEN_SYSTEM_ROOT} --archs='-arch i386'",
                            "emmake make",
                            "emmake make install" ],
   "ignore_archive_root": true,
