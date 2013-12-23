@@ -2,9 +2,9 @@
                               "email": "azakai@mozilla.org"
                             }
   ],
-  "build"              : [ "emconfigure ./configure --prefix=${EMSCRIPTEN_SYSTEM_ROOT} --archs='-arch i386'",
-                           "emmake make",
-                           "emmake make install" ],
+  "build"              : [ "emcmake cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX:PATH=${EMSCRIPTEN_SYSTEM_ROOT} -G Ninja .",
+                           "ninja install"
+  ],
   "ignore_archive_root": true,
   "versions"           : [ { "version": "1.2.8",
                              "src"    : "http://zlib.net/zlib-1.2.8.tar.gz"
