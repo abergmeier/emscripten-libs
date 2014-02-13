@@ -1,4 +1,5 @@
-{ "maintainers"        :  [ { "name" : "Andreas Bergmeier",
+{ "name": "sndfile",
+  "maintainers"        :  [ { "name" : "Andreas Bergmeier",
                               "email": "abergmeier@gmx.net"
                             }
   ],
@@ -9,6 +10,7 @@
   "versions"           : [ { "version": "1.0.25",
                              "src"    : "http://www.mega-nerd.com/libsndfile/files/libsndfile-1.0.25.tar.gz"
                            }
-  ]
+  ],
+  "licenses": [ "LGPL-2.0", "LGPL-3.0"]
 }
 
