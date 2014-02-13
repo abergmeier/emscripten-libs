@@ -1,23 +1,28 @@
-{ "name"               : "FreeImage",
-  "contributors"       :  [ { "name" : "Andreas Bergmeier",
-                              "email": "andreas.bergmeier@gmx.net"
-                            }
+{ "name"        : "FreeImage",
+  "contributors": [
+    { "name" : "Andreas Bergmeier",
+      "email": "andreas.bergmeier@gmx.net",
+    }
   ],
-  "build"              : [ "emmake make",
-                           "emmake make install" ],
+  "scripts": {
+    "build": [
+      "emmake make",
+      "emmake make install"
+    ],
+  },
   "ignore_archive_root": true,
-  "versions"           : [ { "version"     : "3.15.4",
-                             "src"         : "https://github.com/abergmeier/emscripten-FreeImage/archive/emscripten_3.15.4.zip",
-                             "dependencies": {
-                               "zlib": ">= 1.2.7"
-                             }
-                           }
+  "dependencies": {
+    "zlib": ">= 1.2.8"
+  },
+  "licenses": [
+    "GPL-2.0",
+    "GPL-3.0",
+    { "type": "FreeImage Public License",
+      "url" : "http://freeimage.sourceforge.net/freeimage-license.txt"
+    }
   ],
-  "licenses": [ "GPL-2.0",
-                "GPL-3.0",
-                { "type": "FreeImage Public License",
-                  "url" : "http://freeimage.sourceforge.net/freeimage-license.txt"
-                }
-  ]
+  "engines": {
+    "emscripten": ">= 0.9",
+  }
 }
 

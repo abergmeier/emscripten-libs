@@ -1,14 +1,18 @@
-{ "maintainers"        :  [ { "name" : "Alon Zakai",
-                              "email": "azakai@mozilla.org"
-                            }
+{ "name"        : "zlib",
+  "contributors":  [ { "name" : "Alon Zakai",
+                       "email": "azakai@mozilla.org"
+                     },
+                     { "name" : "Andreas Bergmeier",
+                       "email": "abergmeier@gmx.net"
+                     }
   ],
-  "build"              : [ "emcmake cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX:PATH=${EMSCRIPTEN_SYSTEM_ROOT} -G Ninja .",
-                           "ninja install"
-  ],
+  "scripts": { "build": [ "emcmake cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX:PATH=${EMSCRIPTEN_SYSTEM_ROOT} -G Ninja .",
+                          "ninja install"
+               ]
+  },
   "ignore_archive_root": true,
-  "versions"           : [ { "version": "1.2.8",
-                             "src"    : "http://zlib.net/zlib-1.2.8.tar.gz"
-                           }
-  ]
+  "licenses": "zlib",
+  "engines" : { "emscripten": ">= 0.9"
+  }
 }
 

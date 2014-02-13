@@ -1,23 +1,34 @@
-{ "maintainers"        :  [ { "name" : "Andreas Bergmeier",
-                              "email": "abergmeier@gmx.net"
-                            }
+{ "name"       : "FreeType",
+  "contributors": [
+    { "name" : "Andreas Bergmeier",
+      "email": "abergmeier@gmx.net",
+    }
   ],
-  "build"              : [ "emcmake cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX:PATH=${EMSCRIPTEN_SYSTEM_ROOT} -G Ninja .",
-                           "ninja install",
-                           { "builder"  : "pkg-config",
-                             "arguments": { "file"   : "${EMSCRIPTEN_SYSTEM_ROOT}/lib/pkgconfig/freetype.pc",
-                                            "prefix" : "${EMSCRIPTEN_SYSTEM_ROOT}",
-                                            "name"   : "freetype",
-                                            "version": "2.5.1",
-                                            "libs"   : "-L${libdir} -L${sharedlibdir} -lfreetype",
-                                            "cflags" : "-I${includedir}/freetype2"
-                             }
-                           }
-  ],
+  "scripts": {
+    "build": [
+      "emcmake cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX:PATH=${EMSCRIPTEN_SYSTEM_ROOT} -G Ninja .",
+      "ninja install",
+      { "builder"  : "pkg-config",
+        "arguments": {
+          "file"   : "${EMSCRIPTEN_SYSTEM_ROOT}/lib/pkgconfig/freetype.pc",
+          "prefix" : "${EMSCRIPTEN_SYSTEM_ROOT}",
+          "name"   : "freetype",
+          "version": "2.5.1",
+          "libs"   : "-L${libdir} -L${sharedlibdir} -lfreetype",
+          "cflags" : "-I${includedir}/freetype2"
+        }
+      }
+    ],
+  },
   "ignore_archive_root": true,
-  "versions"           : [ { "version": "2.5.1",
-                             "src"    : "http://download.savannah.gnu.org/releases/freetype/freetype-2.5.1.tar.bz2"
-                           }
-  ]
+  "licenses": [
+    "GPL-2.0",
+    { "type": "FreeType License",
+      "url" : "http://git.savannah.gnu.org/cgit/freetype/freetype2.git/plain/docs/FTL.TXT"
+    }
+  ],
+  "engines": {
+    "emscripten": ">= 0.9",
+  }
 }
 
