@@ -12,8 +12,8 @@
         "arguments": {
           "file"   : "${EMSCRIPTEN_SYSTEM_ROOT}/lib/pkgconfig/poco.pc",
           "prefix" : "${EMSCRIPTEN_SYSTEM_ROOT}",
-          "name"   : "Poco",
-          "desc"   : "Poco Foundation C++ Libraries",
+          "name"   : "POCO",
+          "desc"   : "POCO Foundation C++ Libraries",
           "version": "1.4.6p2",
           "libs"   : "-L${libdir} -L${sharedlibdir} -lPocoUtil -lPocoXML -lPocoFoundation",
           "cflags" : "-I${includedir}"
