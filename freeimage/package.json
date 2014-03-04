@@ -1,14 +1,14 @@
 { "name"        : "FreeImage",
   "contributors": [
     { "name" : "Andreas Bergmeier",
-      "email": "andreas.bergmeier@gmx.net",
+      "email": "andreas.bergmeier@gmx.net"
     }
   ],
   "scripts": {
     "build": [
       "emmake make",
       "emmake make install"
-    ],
+    ]
   },
   "ignore_archive_root": true,
   "dependencies": {
@@ -22,7 +22,7 @@
     }
   ],
   "engines": {
-    "emscripten": ">= 0.9",
+    "emscripten": ">= 0.9"
   }
 }
 

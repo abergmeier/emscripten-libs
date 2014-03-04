@@ -1,7 +1,7 @@
-{ "name"       : "FreeType",
+{ "name"        : "FreeType",
   "contributors": [
     { "name" : "Andreas Bergmeier",
-      "email": "abergmeier@gmx.net",
+      "email": "abergmeier@gmx.net"
     }
   ],
   "scripts": {
@@ -18,7 +18,7 @@
           "cflags" : "-I${includedir}/freetype2"
         }
       }
-    ],
+    ]
   },
   "ignore_archive_root": true,
   "licenses": [
@@ -28,7 +28,7 @@
     }
   ],
   "engines": {
-    "emscripten": ">= 0.9",
+    "emscripten": ">= 0.9"
   }
 }
 

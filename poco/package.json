@@ -1,7 +1,7 @@
 { "name"       : "POCO",
   "contributors": [
     { "name" : "Andreas Bergmeier",
-      "email": "abergmeier@gmx.net",
+      "email": "abergmeier@gmx.net"
     }
   ],
   "scripts": {
@@ -19,14 +19,14 @@
           "cflags" : "-I${includedir}"
         }
       }
-    ],
+    ]
   },
   "ignore_archive_root": true,
   "licenses": [
     "Boost-1.0"
   ],
   "engines": {
-    "emscripten": ">= 0.9",
+    "emscripten": ">= 0.9"
   }
 }
 
