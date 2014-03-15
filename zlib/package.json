@@ -10,7 +10,9 @@
                           "ninja install"
                ]
   },
-  "ignore_archive_root": true,
+  "src": {
+    "ignore_archive_root": true
+  },
   "licenses": "zlib",
   "engines" : { "emscripten": ">= 0.9"
   }

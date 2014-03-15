@@ -20,7 +20,9 @@
       }
     ]
   },
-  "ignore_archive_root": true,
+  "src": {
+    "ignore_archive_root": true
+  },
   "license": "BSD",
   "engines": {
     "emscripten": ">= 0.9"

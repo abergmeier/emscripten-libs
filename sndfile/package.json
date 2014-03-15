@@ -10,7 +10,9 @@
       "emmake make install"
     ]
   },
-  "ignore_archive_root": true,
+  "src": {
+    "ignore_archive_root": true
+  },
   "licenses": [
     "LGPL-2.0",
     "LGPL-3.0"

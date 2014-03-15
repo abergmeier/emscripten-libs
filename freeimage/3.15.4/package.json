@@ -1,4 +1,6 @@
 { "version": "3.15.4",
-  "src"    : "https://github.com/abergmeier/emscripten-FreeImage/archive/emscripten_3.15.4.zip"
+  "src"    : {
+    "uri": "https://github.com/abergmeier/emscripten-FreeImage/archive/emscripten_3.15.4.zip"
+  }
 }
 

@@ -10,7 +10,9 @@
       "emmake make install"
     ]
   },
-  "ignore_archive_root": true,
+  "src": {
+    "ignore_archive_root": true
+  },
   "dependencies": {
     "zlib": ">= 1.2.8"
   },

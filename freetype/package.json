@@ -20,7 +20,9 @@
       }
     ]
   },
-  "ignore_archive_root": true,
+  "src": {
+    "ignore_archive_root": true
+  },
   "licenses": [
     "GPL-2.0",
     { "type": "FreeType License",
